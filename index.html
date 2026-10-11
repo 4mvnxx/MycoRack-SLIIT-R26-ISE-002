@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rack-Level Micro-Climate &amp; Growth Optimizer | R26-ISE-002 · SLIIT Research</title>
+    <meta name="description" content="An integrated rack-level micro-climate and growth optimization research project for oyster mushroom farms. R26-ISE-002, SLIIT.">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="nav">
+      <div class="wrap navin">
+        <a class="brand" href="#home">
+          <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 34C8 18 20 8 32 8s24 10 24 26c0 2-2 3-4 3H12c-2 0-4-1-4-3z" fill="#c9892b"/>
+            <circle cx="22" cy="22" r="4" fill="#f7e3b5"/>
+            <circle cx="36" cy="16" r="3" fill="#f7e3b5"/>
+            <circle cx="43" cy="27" r="4" fill="#f7e3b5"/>
+            <path d="M24 37h16v10c0 5-3 9-8 9s-8-4-8-9z" fill="#f3ead6"/>
+          </svg>
+          <span>MycoRack<small>SLIIT · R26-ISE-002</small></span></a>
+        <input type="checkbox" id="mt">
+        <label for="mt" class="burger">Menu ☰</label>
+        <nav>
+          <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#domain">Domain</a></li>
+            <li class="dd">
+              <a href="#milestones">Milestones ▾</a>
+              <ul class="sub">
+                <li><a href="#ms1">Topic Assessment Form</a></li>
+                <li><a href="#ms2">Project Proposal</a></li>
+                <li><a href="#ms3">Software Requirements Specification</a></li>
+                <li><a href="#ms4">Progress Presentation 1</a></li>
+                <li><a href="#ms5">Progress Presentation 2</a></li>
+                <li><a href="#ms6">Final Assessment</a></li>
+                <li><a href="#ms7">Website Viva</a></li>
+              </ul>
+            </li>
+            <li><a href="#documents">Documents</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+
+      <section id="home" class="hero">
+        <div class="wrap herogrid">
+          <div>
+            <p class="eyebrow">SLIIT RESEARCH · R26-ISE-002</p>
+            <h1>Every rack. Every stage. <em>Every harvest.</em></h1>
+            <p class="sub1">Grow. Sense. Protect.</p>
+            <p class="lead">An integrated, rack-level system for Sri Lankan oyster mushroom farms. It connects growth stage awareness, moisture stress modelling, CO₂ trend analysis and early disease detection in one mobile-assisted platform.</p>
+            <p><a class="btn" href="#components">Explore the system ↗</a> <a class="btn ghost" href="#domain">Discover the research →</a></p>
+            <p class="chip">✧ Small &amp; medium farms · Android · Sri Lanka</p>
+          </div>
+          <figure class="heroimg">
+            <img src="images/concept.png" alt="Conceptual diagram of the Rack-Level Micro-Climate and Growth Optimizer" width="662" height="1161">
+            <figcaption>Conceptual diagram of the proposed solution</figcaption>
+          </figure>
+        </div>
+        <div class="wrap strip">
+          <span>Growth stage</span><span>Moisture stress</span><span>CO₂ stress</span><span>Disease detection</span><span>Rack-level tracking</span>
+        </div>
+      </section>
+
+      <section id="idea" class="sec">
+        <div class="wrap narrow">
+          <p class="kick">01 / THE IDEA</p>
+          <h2>A smarter way to <em>grow.</em></h2>
+          <p>Oyster mushrooms are sensitive to the conditions around them, and in multi-rack farms every rack and shelf has its own micro-climate. Yet most decisions are still made by eye and by fixed schedule.</p>
+          <p>This research project from the Sri Lanka Institute of Information Technology (SLIIT) brings four capabilities into one platform: <strong>growth stage detection</strong>, <strong>moisture stress regulation</strong>, <strong>CO₂ stress prediction</strong> and <strong>disease detection with rack-level tracking</strong>, delivered through a mobile app and a portable sensing-and-actuation device.</p>
+          <p class="callout">Outputs are advisory. The farmer always makes the final decision on treatment and harvesting.</p>
+        </div>
+      </section>
+
+      <section id="components" class="sec alt">
+        <div class="wrap">
+          <p class="kick">02 / FOUR COMPONENTS, ONE SYSTEM</p>
+          <h2>Meet the research <em>components.</em></h2>
+          <p class="muted">Distinct skills. A connected experience. Explore the focus of each component.</p>
+          <div class="grid4">
+            <article class="comp">
+              <div class="num">
+                01
+              </div>
+              <div class="ico">
+                🍄
+              </div>
+              <p class="tag">GROWTH STAGE</p>
+              <h3>Growth Stage &amp; Harvest Time</h3>
+              <p>See how every rack is growing, and when it will be ready.</p>
+              <details>
+                <summary>Explore component</summary>
+                <div class="kv">
+                  <h4>Input</h4>
+                  <p>Rack images from the camera of the portable device.</p>
+                </div>
+                <div class="kv">
+                  <h4>Process</h4>
+                  <p>Image preprocessing for lighting and noise, then a CNN classifies early growth, pinning, fruiting and mature stages.</p>
+                </div>
+                <div class="kv">
+                  <h4>Output</h4>
+                  <p>Detected stage and estimated days to harvest, shown in the mobile app; stage context is passed to the moisture module.</p>
+                </div>
+                <div class="kv">
+                  <h4>Approach</h4>
+                  <p>CNN image classification with growing-degree-day based harvest estimation.</p>
+                </div>
+                <div class="kv">
+                  <h4>Responsibility</h4>
+                  <p>H. P. D. M. Chandrasiri &middot; IT22180148</p>
+                </div>
+              </details>
+            </article>
+            <article class="comp">
+              <div class="num">
+                02
+              </div>
+              <div class="ico">
+                💧
+              </div>
+              <p class="tag">MOISTURE STRESS</p>
+              <h3>Moisture Stress Regulation</h3>
+              <p>Humidity read in the context of temperature and growth stage.</p>
+              <details>
+                <summary>Explore component</summary>
+                <div class="kv">
+                  <h4>Input</h4>
+                  <p>Rack-level temperature and relative humidity, plus detected growth stage.</p>
+                </div>
+                <div class="kv">
+                  <h4>Process</h4>
+                  <p>Vapour pressure deficit and a Transpiration Stress Index (TSI); rule-based decision logic.</p>
+                </div>
+                <div class="kv">
+                  <h4>Output</h4>
+                  <p>Moisture stress status, stage-aware recommendations and automatic mist sprayer / exhaust fan activation.</p>
+                </div>
+                <div class="kv">
+                  <h4>Approach</h4>
+                  <p>TSI modelling with rule-based control instead of fixed humidity thresholds.</p>
+                </div>
+                <div class="kv">
+                  <h4>Responsibility</h4>
+                  <p>R. T. S. Dissanayake &middot; IT22062406</p>
+                </div>
+              </details>
+            </article>
+            <article class="comp">
+              <div class="num">
+                03
+              </div>
+              <div class="ico">
+                🌫️
+              </div>
+              <p class="tag">CO₂ STRESS</p>
+              <h3>CO₂ Stress Prediction</h3>
+              <p>Catch invisible gas build-up before it harms the crop.</p>
+              <details>
+                <summary>Explore component</summary>
+                <div class="kv">
+                  <h4>Input</h4>
+                  <p>Continuous CO₂ readings from the rack-level sensor.</p>
+                </div>
+                <div class="kv">
+                  <h4>Process</h4>
+                  <p>Time-series trend analysis into a normalised CO₂ stress index; threshold and persistence checks.</p>
+                </div>
+                <div class="kv">
+                  <h4>Output</h4>
+                  <p>Early warnings, ventilation advice and, if stress persists, automatic image capture for validation.</p>
+                </div>
+                <div class="kv">
+                  <h4>Approach</h4>
+                  <p>Predictive trend analysis with hybrid image-based confirmation.</p>
+                </div>
+                <div class="kv">
+                  <h4>Responsibility</h4>
+                  <p>S. G. A. Sarathchandra &middot; IT22182746</p>
+                </div>
+              </details>
+            </article>
+            <article class="comp">
+              <div class="num">
+                04
+              </div>
+              <div class="ico">
+                🔬
+              </div>
+              <p class="tag">DISEASE DETECTION</p>
+              <h3>Disease Detection &amp; Rack Tracking</h3>
+              <p>Spot green mold and black mold early, and know exactly where.</p>
+              <details>
+                <summary>Explore component</summary>
+                <div class="kv">
+                  <h4>Input</h4>
+                  <p>Smartphone images of mushroom bags with rack ID and bag ID.</p>
+                </div>
+                <div class="kv">
+                  <h4>Process</h4>
+                  <p>Validation, resizing and CLAHE, then YOLOv8 object detection of green mold (<em>Trichoderma</em>) and black mold (<em>Aspergillus niger</em>).</p>
+                </div>
+                <div class="kv">
+                  <h4>Output</h4>
+                  <p>Annotated result, history, report export and a colour-coded rack tracking grid; farmer confirms health status.</p>
+                </div>
+                <div class="kv">
+                  <h4>Approach</h4>
+                  <p>YOLOv8 detection, FastAPI inference service and MongoDB rack-level records.</p>
+                </div>
+                <div class="kv">
+                  <h4>Responsibility</h4>
+                  <p>M. I. Amana &middot; IT22156624</p>
+                </div>
+              </details>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap">
+          <p class="kick">03 / THE APPROACH</p>
+          <h2>From signal to <em>decision.</em></h2>
+          <p class="muted">Sense → recognise → analyse → act → monitor.</p>
+          <ol class="steps">
+            <li><span>1</span>
+            <h3>Sense</h3>
+            <p>Temperature, humidity and CO₂ readings and rack images are collected.</p>
+            </li>
+            <li><span>2</span>
+            <h3>Recognise</h3>
+            <p>Computer vision finds the growth stage and any contamination.</p>
+            </li>
+            <li><span>3</span>
+            <h3>Analyse</h3>
+            <p>TSI and CO₂ stress indices are computed in context.</p>
+            </li>
+            <li><span>4</span>
+            <h3>Act</h3>
+            <p>Mist sprayer or exhaust fan is triggered; warnings are sent.</p>
+            </li>
+            <li><span>5</span>
+            <h3>Monitor</h3>
+            <p>Rack history, alerts and reports track progress over time.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="domain" class="sec alt">
+        <div class="wrap">
+          <p class="kick">04 / THE RESEARCH DOMAIN</p>
+          <h2>Practical on the farm. <em>Rigorous in the lab.</em></h2>
+          <p class="muted">Explore the literature, questions, objectives and methodology behind the project.</p>
+          <div class="accs">
+            <details class="acc" open>
+              <summary>Literature survey</summary>
+              <div class="accb">
+                <p>Studies of IoT and deep learning for mushroom farming show clear progress but leave gaps for rack-level, stage-aware management.</p>
+                <ul>
+                  <li><strong>Environmental control.</strong> IoT systems monitor and automate temperature and humidity in oyster mushroom houses, including fuzzy-logic control, but mostly use fixed thresholds and treat temperature and humidity separately.</li>
+                  <li><strong>Humidity and transpiration.</strong> Botanical research shows humidity and temperature interact through vapour pressure deficit, so the same relative humidity can mean different stress at different temperatures.</li>
+                  <li><strong>Sri Lankan IoT study.</strong> An IoT system for local oyster mushroom farms combined monitoring, harvest detection, disease detection and yield prediction with CNN and LSTM models, but without rack-level contamination tracking.</li>
+                  <li><strong>Image-based disease detection.</strong> YOLOv5-based systems classify only healthy versus diseased; growing-bag detection with IoT and web apps shows the direction of travel.</li>
+                  <li><strong>Growth stage tracking.</strong> Vision work focuses on robotic harvesting rather than multi-stage classification and remaining-days estimates for growers.</li>
+                </ul>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>Research gap</summary>
+              <div class="accb">
+                <ul>
+                  <li>Moisture control relies on fixed relative-humidity thresholds, ignoring temperature interaction and growth stage.</li>
+                  <li>CO₂ monitoring is disconnected from growth context and rarely validated by images.</li>
+                  <li>Disease systems give broad labels and no rack or bag tracking.</li>
+                  <li>Environmental control, disease detection and growth monitoring exist as separate silos, rarely tailored to Sri Lankan farms.</li>
+                </ul>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>Research problem</summary>
+              <div class="accb">
+                <p>How can farmers manage each rack according to its biological growth stage and true moisture stress, anticipate CO₂ stress and detect fungal disease early, when they currently depend on visual judgement, fixed misting schedules and manual inspection?</p>
+                <p>The core problem is the <strong>absence of an integrated, intelligent rack-level micro-climate and growth management system</strong>.</p>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>Research objectives</summary>
+              <div class="accb">
+                <p><strong>Main objective.</strong> Design and develop an intelligent, rack-level micro-climate and growth optimization system for oyster mushroom cultivation integrating growth stage detection, TSI-based moisture stress modelling, CO₂ stress prediction and image-based disease identification, to improve yield consistency and reduce crop loss.</p>
+                <ol>
+                  <li>Accurately detect the biological growth stage at rack level using image analysis.</li>
+                  <li>Regulate moisture stress at rack level using temperature–humidity interaction and growth stage.</li>
+                  <li>Predict CO₂-induced physiological stress and validate prolonged stress with images.</li>
+                  <li>Detect and classify green mold and black mold using image-based techniques.</li>
+                </ol>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>Methodology &amp; evaluation</summary>
+              <div class="accb">
+                <p>The project follows <strong>Design Science Research</strong> with an Agile development approach: identify the problem, specify requirements, collect and annotate data, build and train models, integrate, then evaluate.</p>
+                <ul>
+                  <li>Images are collected on farms with smartphones; temperature, humidity and CO₂ come from commercially available sensors at rack level.</li>
+                  <li>Computer vision (CNN, YOLOv8) handles stage and disease detection; stress indices drive rule-based control.</li>
+                  <li>Evaluation uses precision, recall, mAP and accuracy, response time, and user acceptance testing with growers.</li>
+                </ul>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>Results, limitations &amp; next steps</summary>
+              <div class="accb">
+                <p>Early evaluation of the disease detection component reports precision 96.2%, recall 94.8% and mAP@50 95.5%; the growth stage classifier reports 92.4% accuracy. A four-week field trial with 15 growers on three farms rated the platform positively. </p>
+                <p>Limitations include dataset size and variety, lighting conditions, and dependence on connectivity. Future work: more pathogens and farms, edge inference for offline use, and Sinhala/Tamil interfaces.</p>
+              </div>
+            </details>
+          </div>
+          <h3 class="h3">System architecture</h3>
+          <p class="muted">The platform connects the farmer’s mobile app, a backend with AI services and a shared database; the portable device senses and actuates at rack level.</p>
+          <div class="arch">
+            <div>
+              Farmers &amp; admins
+            </div>
+            <b>→</b>
+            <div>
+              React Native app
+            </div>
+            <b>↔</b>
+            <div>
+              FastAPI backend + AI services
+            </div>
+            <b>↔</b>
+            <div>
+              MongoDB
+            </div>
+          </div>
+          <div class="arch two">
+            <div>
+              Portable device (ESP32): DHT sensors · CO₂ sensor · camera
+            </div>
+            <b>↔</b>
+            <div>
+              Mist sprayer · Exhaust fan
+            </div>
+          </div>
+          <div class="chips">
+            <span>React Native</span><span>FastAPI</span><span>Python</span><span>MongoDB</span><span>YOLOv8</span><span>CNN</span><span>OpenCV</span><span>Roboflow</span><span>ESP32</span><span>DHT sensors</span><span>MQ-135 / MH-Z19</span><span>HTTPS / JWT</span>
+          </div>
+          <figure>
+            <img src="images/disease-arch.png" alt="Architecture of the disease detection component" width="689" height="382" loading="lazy">
+            <figcaption>Architecture of the disease detection and rack tracking component.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="experience" class="sec">
+        <div class="wrap">
+          <p class="kick">05 / PRODUCT EXPERIENCE</p>
+          <h2>A glimpse inside the <em>system.</em></h2>
+          <p class="muted">Documented screens and designs. Remaining screenshots are awaiting delivery.</p>
+          <div class="gl3">
+            <div class="gl">
+              <p class="tag">GROWTH STAGE</p>
+              <h3>See the stage. Know the day.</h3>
+              <p>Early growth · Pinning · Fruiting · Mature</p>
+              <div class="shot">
+                Screenshot awaiting delivery<br><small>Planned figure · Growth stage screen</small>
+              </div>
+            </div>
+            <div class="gl">
+              <p class="tag">MOISTURE STRESS</p>
+              <h3>Stress, read correctly.</h3>
+              <p>Temperature · Humidity · TSI</p>
+              <div class="shot">
+                Screenshot awaiting delivery<br><small>Planned figure · Moisture stress dashboard</small>
+              </div>
+            </div>
+            <div class="gl">
+              <p class="tag">CO₂ STRESS</p>
+              <h3>A breath of fresh air.</h3>
+              <p>Trend · Warning · Image check</p>
+              <div class="shot">
+                Screenshot awaiting delivery<br><small>Planned figure · CO₂ stress screen</small>
+              </div>
+            </div>
+          </div>
+          <div class="gl wide">
+            <p class="tag">DISEASE DETECTION</p>
+            <h3>Capture. Detect. Isolate.</h3>
+            <p>Capture · History &amp; Reports · Rack Tracking (design mockups)</p>
+            <img src="images/ui.jpg" alt="Disease detection screens: Capture, History and Rack Tracking" width="1166" height="640" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+
+      <section id="milestones" class="sec alt">
+        <div class="wrap narrow">
+          <p class="kick">06 / PROJECT MILESTONES</p>
+          <h2>From an idea to a <em>working farm tool.</em></h2>
+          <p class="muted">Follow the project through its assessment stages. Use the Milestones menu above or expand an item.</p>
+          <details class="ms" id="ms1">
+            <summary><b>02</b><span>Topic Assessment Form<small>Topic approved</small></span></summary>
+            <div class="accb">
+              <p>The topic, research problem, proposed solution, domain expertise and objectives were approved by the supervisor and co-supervisor.</p>
+              <dl>
+                <dt>Date</dt>
+                <dd><mark class="ph">[Date]</mark></dd>
+                <dt>Marks allocated</dt>
+                <dd><mark class="ph">[Marks]</mark></dd>
+              </dl>
+            </div>
+          </details>
+          <details class="ms" id="ms2">
+            <summary><b>03</b><span>Project Proposal<small>Reports submitted</small></span></summary>
+            <div class="accb">
+              <p>Individual proposal reports covering background, literature review, research gap, objectives, methodology, architecture, requirements, commercialisation, budget, WBS and Gantt chart. Supervisor sign-off 13 March 2026.</p>
+              <dl>
+                <dt>Date</dt>
+                <dd>March 2026 <mark class="ph">[confirm]</mark></dd>
+                <dt>Marks allocated</dt>
+                <dd><mark class="ph">[Marks]</mark></dd>
+              </dl>
+            </div>
+          </details>
+          <details class="ms" id="ms3">
+            <summary><b>04</b><span>Software Requirements Specification<small>v1.0 completed</small></span></summary>
+            <div class="accb">
+              <p>IEEE 29148-style document covering product functions, user classes, interfaces, system features and analysis models.</p>
+              <dl>
+                <dt>Date</dt>
+                <dd>13 May 2026</dd>
+                <dt>Marks allocated</dt>
+                <dd><mark class="ph">[Marks]</mark></dd>
+              </dl>
+            </div>
+          </details>
+          <details class="ms" id="ms4">
+            <summary><b>05</b><span>Progress Presentation 1<small>50% prototype</small></span></summary>
+            <div class="accb">
+              <p>Component prototypes demonstrated at roughly 50% completion, as planned in the Gantt chart.</p>
+              <dl>
+                <dt>Date</dt>
+                <dd>Early May 2026 <mark class="ph">[confirm]</mark></dd>
+                <dt>Marks allocated</dt>
+                <dd><mark class="ph">[Marks]</mark></dd>
+              </dl>
+            </div>
+          </details>
+          <details class="ms" id="ms5">
+            <summary><b>06</b><span>Progress Presentation 2<small>Integration</small></span></summary>
+            <div class="accb">
+              <p>Integrated system with the four components working together.</p>
+              <dl>
+                <dt>Date</dt>
+                <dd>August 2026 <mark class="ph">[confirm]</mark></dd>
+                <dt>Marks allocated</dt>
+                <dd><mark class="ph">[Marks]</mark></dd>
+              </dl>
+            </div>
+          </details>
+          <details class="ms" id="ms6">
+            <summary><b>07</b><span>Final Assessment<small>Thesis, paper, presentation</small></span></summary>
+            <div class="accb">
+              <p>Final integrated system, individual theses, research paper and final presentation.</p>
+              <dl>
+                <dt>Date</dt>
+                <dd>October 2026 <mark class="ph">[confirm]</mark></dd>
+                <dt>Marks allocated</dt>
+                <dd><mark class="ph">[Marks]</mark></dd>
+              </dl>
+            </div>
+          </details>
+          <details class="ms" id="ms7">
+            <summary><b>08</b><span>Website Viva<small>Same day as final</small></span></summary>
+            <div class="accb">
+              <p>Website viva conducted on the day of the final research project presentation.</p>
+              <dl>
+                <dt>Date</dt>
+                <dd><mark class="ph">[Date]</mark></dd>
+                <dt>Marks allocated</dt>
+                <dd><mark class="ph">[Marks]</mark></dd>
+              </dl>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="documents" class="sec">
+        <div class="wrap">
+          <p class="kick">07 / THE DOCUMENT REPOSITORY</p>
+          <h2>Research, in <em>detail.</em></h2>
+          <p class="muted">View project documents in your browser or download the files.</p>
+          <div class="docs">
+            <input type="radio" name="f" id="fa" checked><input type="radio" name="f" id="fp"><input type="radio" name="f" id="fc">
+            <div class="tabs">
+              <label for="fa">All documents</label><label for="fp">Project</label><label for="fc">Components</label>
+            </div>
+            <div class="docgrid">
+              <div class="doc proj">
+                <div class="di">▤</div>
+                <h3>Project Charter</h3>
+                <p>Topic Assessment Form · R26-ISE-002.</p>
+                <p class="fmt">PDF</p>
+                <div class="act">
+                  <a class="btn sm" href="files/Topic-Assessment-Form.pdf" target="_blank" rel="noopener">View ↗</a>
+                <a class="btn sm ghost" href="files/Topic-Assessment-Form.pdf" download>Download ↓</a>
+                </div>
+              </div>
+              <div class="doc comp">
+                <div class="di">▤</div>
+                <h3>Proposal — Growth Stage</h3>
+                <p>Individual component proposal (IT22180148).</p>
+                <p class="fmt">PDF</p>
+                <div class="act">
+                  <a class="btn sm" href="files/Proposal-Growth-Stage-IT22180148.pdf" target="_blank" rel="noopener">View ↗</a>
+                <a class="btn sm ghost" href="files/Proposal-Growth-Stage-IT22180148.pdf" download>Download ↓</a>
+                </div>
+              </div>
+              <div class="doc comp">
+                <div class="di">▤</div>
+                <h3>Proposal — Moisture Stress</h3>
+                <p>Individual component proposal (IT22062406).</p>
+                <p class="fmt">PDF</p>
+                <div class="act">
+                  <a class="btn sm" href="files/Proposal-Moisture-Stress-IT22062406.pdf" target="_blank" rel="noopener">View ↗</a>
+                <a class="btn sm ghost" href="files/Proposal-Moisture-Stress-IT22062406.pdf" download>Download ↓</a>
+                </div>
+              </div>
+              <div class="doc comp">
+                <div class="di">▤</div>
+                <h3>Proposal — CO₂ Stress</h3>
+                <p>Individual component proposal (IT22182746).</p>
+                <p class="fmt">PDF</p>
+                <div class="act">
+                  <a class="btn sm" href="files/Proposal-CO2-Stress-IT22182746.pdf" target="_blank" rel="noopener">View ↗</a>
+                <a class="btn sm ghost" href="files/Proposal-CO2-Stress-IT22182746.pdf" download>Download ↓</a>
+                </div>
+              </div>
+              <div class="doc comp">
+                <div class="di">▤</div>
+                <h3>Proposal — Disease Detection</h3>
+                <p>Individual component proposal (IT22156624).</p>
+                <p class="fmt">PDF</p>
+                <div class="act">
+                  <a class="btn sm" href="files/Proposal-Disease-Detection-IT22156624.pdf" target="_blank" rel="noopener">View ↗</a>
+                <a class="btn sm ghost" href="files/Proposal-Disease-Detection-IT22156624.pdf" download>Download ↓</a>
+                </div>
+              </div>
+              <div class="doc proj">
+                <div class="di">▤</div>
+                <h3>Software Requirements Specification</h3>
+                <p>SRS v1.0 · 13 May 2026.</p>
+                <p class="fmt">PDF</p>
+                <div class="act">
+                  <a class="btn sm" href="files/SRS.pdf" target="_blank" rel="noopener">View ↗</a>
+                <a class="btn sm ghost" href="files/SRS.pdf" download>Download ↓</a>
+                </div>
+              </div>
+              <div class="doc proj">
+                <div class="di">▤</div>
+                <h3>Research Paper (draft)</h3>
+                <p>Group paper on the integrated system.</p>
+                <p class="fmt">PDF</p>
+                <div class="act">
+                  <a class="btn sm" href="files/Research-Paper-Draft.pdf" target="_blank" rel="noopener">View ↗</a>
+                <a class="btn sm ghost" href="files/Research-Paper-Draft.pdf" download>Download ↓</a>
+                </div>
+              </div>
+              <div class="doc proj">
+                <div class="di">▤</div>
+                <h3>Checklist documents</h3>
+                <p>Assessment checklists.</p>
+                <p class="fmt">Pending</p>
+                <div class="act">
+                  <span class="soon">Coming soon</span>
+                </div>
+              </div>
+              <div class="doc comp">
+                <div class="di">▤</div>
+                <h3>Thesis — Growth Stage (draft)</h3>
+                <p>Individual thesis draft (IT22180148).</p>
+                <p class="fmt">PDF</p>
+                <div class="act">
+                  <a class="btn sm" href="files/Thesis-Growth-Stage-IT22180148-Draft.pdf" target="_blank" rel="noopener">View ↗</a>
+                <a class="btn sm ghost" href="files/Thesis-Growth-Stage-IT22180148-Draft.pdf" download>Download ↓</a>
+                </div>
+              </div>
+              <div class="doc comp">
+                <div class="di">▤</div>
+                <h3>Thesis — Moisture Stress</h3>
+                <p>Individual thesis (IT22062406).</p>
+                <p class="fmt">PDF</p>
+                <div class="act">
+                  <a class="btn sm" href="files/Thesis-Moisture-Stress-IT22062406.pdf" target="_blank" rel="noopener">View ↗</a>
+                <a class="btn sm ghost" href="files/Thesis-Moisture-Stress-IT22062406.pdf" download>Download ↓</a>
+                </div>
+              </div>
+              <div class="doc comp">
+                <div class="di">▤</div>
+                <h3>Thesis — CO₂ Stress</h3>
+                <p>Individual thesis (IT22182746).</p>
+                <p class="fmt">Pending</p>
+                <div class="act">
+                  <span class="soon">Coming soon</span>
+                </div>
+              </div>
+              <div class="doc comp">
+                <div class="di">▤</div>
+                <h3>Thesis — Disease Detection</h3>
+                <p>Individual thesis (IT22156624).</p>
+                <p class="fmt">PDF</p>
+                <div class="act">
+                  <a class="btn sm" href="files/Thesis-Disease-Detection-IT22156624.pdf" target="_blank" rel="noopener">View ↗</a>
+                <a class="btn sm ghost" href="files/Thesis-Disease-Detection-IT22156624.pdf" download>Download ↓</a>
+                </div>
+              </div>
+              <div class="doc proj">
+                <div class="di">▤</div>
+                <h3>Final Thesis (main)</h3>
+                <p>The final document will be available here soon.</p>
+                <p class="fmt">Pending</p>
+                <div class="act">
+                  <span class="soon">Coming soon</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="about" class="sec alt">
+        <div class="wrap">
+          <p class="kick">08 / ABOUT US</p>
+          <h2>The people behind the <em>project.</em></h2>
+          <p class="muted">R26-ISE-002 · Department of Information Technology · Faculty of Computing · SLIIT, Malabe</p>
+          <div class="grid4">
+            <div class="person">
+              <div class="av">
+                C
+              </div>
+              <h3>H. P. D. M. Chandrasiri</h3>
+              <p class="id">IT22180148</p>
+              <p class="role">Growth Stage</p>
+              <p class="uni">SLIIT · INFORMATION SYSTEMS ENGINEERING</p>
+            </div>
+            <div class="person">
+              <div class="av">
+                D
+              </div>
+              <h3>R. T. S. Dissanayake</h3>
+              <p class="id">IT22062406</p>
+              <p class="role">Moisture Stress</p>
+              <p class="uni">SLIIT · INFORMATION SYSTEMS ENGINEERING</p>
+            </div>
+            <div class="person">
+              <div class="av">
+                S
+              </div>
+              <h3>S. G. A. Sarathchandra</h3>
+              <p class="id">IT22182746</p>
+              <p class="role">CO₂ Stress</p>
+              <p class="uni">SLIIT · INFORMATION SYSTEMS ENGINEERING</p>
+            </div>
+            <div class="person">
+              <div class="av">
+                A
+              </div>
+              <h3>M. I. Amana</h3>
+              <p class="id">IT22156624</p>
+              <p class="role">Disease Detection</p>
+              <p class="uni">SLIIT · INFORMATION SYSTEMS ENGINEERING</p>
+            </div>
+          </div>
+          <div class="sup">
+            <p><strong>Ms. Narmada Gamage</strong><br><span>Supervisor</span></p>
+            <p><strong>Ms. Rangi Liyanage</strong><br><span>Co-supervisor</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="sec">
+        <div class="wrap narrow">
+          <p class="kick">09 / LET’S CONNECT</p>
+          <h2>Curious about the <em>project?</em></h2>
+          <p class="muted">For research enquiries, project information or collaboration, get in touch with the team.</p>
+        <div class="contact one">
+<div>
+              <h3>Contact the team</h3>
+              <p>Email: <a href="mailto:OYmushroom@gmail.com">OYmushroom@gmail.com</a></p>
+              <p>Phone: <a href="tel:+94777525860">+94777525860</a></p>
+              <p>Faculty of Computing, SLIIT, Sri Lanka</p>
+              <p><a class="btn" href="mailto:?subject=R26-ISE-002%20website%20enquiry">Email the team ↗</a></p>
+            </div>
+        </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap foot">
+        <span>
+          <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 34C8 18 20 8 32 8s24 10 24 26c0 2-2 3-4 3H12c-2 0-4-1-4-3z" fill="#c9892b"/>
+            <circle cx="22" cy="22" r="4" fill="#f7e3b5"/>
+            <circle cx="36" cy="16" r="3" fill="#f7e3b5"/>
+            <circle cx="43" cy="27" r="4" fill="#f7e3b5"/>
+            <path d="M24 37h16v10c0 5-3 9-8 9s-8-4-8-9z" fill="#f3ead6"/>
+          </svg>
+          MycoRack · R26-ISE-002 · SLIIT research project</span><span>© 2026 · <a href="#home">Back to top ↑</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
